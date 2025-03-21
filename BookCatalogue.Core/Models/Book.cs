@@ -14,6 +14,6 @@ public class Book
     
     [MaxLength(250)]
     public string? ImageUrl { get; set; } = string.Empty;
-    
+
     public Author Author { get; set; } = new();
 }

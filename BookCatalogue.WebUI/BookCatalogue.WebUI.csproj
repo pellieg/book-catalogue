@@ -23,4 +23,8 @@
       <ProjectReference Include="..\BookCatalogue.Core\BookCatalogue.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\author-images\" />
+    </ItemGroup>
+
 </Project>

@@ -1,26 +1,33 @@
 ﻿@model List<BookCatalogue.Core.Models.Author>
 @{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Manage Authors</h1>
+	<h1 class="display-4">Manage Authors</h1>
 
-    <ul class="nav nav-pills nav-fill mt-4">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">List</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">New</a>
-        </li>
-    </ul>
+	<ul class="nav nav-pills nav-fill mt-4">
+		<li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="#">List</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/Author/Create">New</a>
+		</li>
+	</ul>
 </div>
 
 <h2 class="mt-4">Authors:</h2>
-<div>
-    @foreach (var author in Model)
-    {
-        <p><strong>Author</strong>: <a href="/Author/Details/@author.Id">@author.FirstName @author.LastName</a></p>
-    }
+<div class="row">
+	@foreach (var author in Model)
+	{
+		<a href="/Author/Details/@author.Id" class="card col-md-4">
+			<div class="card-title">
+				<h3>@author.FirstName @author.LastName</h3>
+			</div>
+			<div class="card-body">
+				<img src="@author.ImageUrl" style="max-width: 100%;" />
+			</div>
+		</a>
+	}
 </div>
 
