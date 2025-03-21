@@ -1,6 +1,7 @@
-﻿using BookCatalogue.WebUI.Models;
+﻿using System.Net.Http.Json;
+using BookCatalogue.Core.Models;
 
-namespace BookCatalogue.WebUI.Services;
+namespace BookCatalogue.Core.Service;
 
 public class AuthorService(HttpClient httpClient)
 {

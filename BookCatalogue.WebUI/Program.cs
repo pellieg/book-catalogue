@@ -1,4 +1,4 @@
-using BookCatalogue.WebUI.Services;
+using BookCatalogue.Core.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 

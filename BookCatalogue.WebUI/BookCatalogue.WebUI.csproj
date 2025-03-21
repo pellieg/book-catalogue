@@ -18,4 +18,8 @@
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BookCatalogue.Core\BookCatalogue.Core.csproj" />
+    </ItemGroup>
+
 </Project>

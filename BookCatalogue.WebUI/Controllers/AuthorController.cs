@@ -1,4 +1,4 @@
-﻿using BookCatalogue.WebUI.Services;
+﻿using BookCatalogue.Core.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookCatalogue.WebUI.Controllers;
