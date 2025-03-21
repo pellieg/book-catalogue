@@ -20,7 +20,7 @@
 <div>
     @foreach (var author in Model)
     {
-        <p><strong>Author</strong>: @author.FirstName @author.LastName</p>
+        <p><strong>Author</strong>: <a href="/Author/Details/@author.Id">@author.FirstName @author.LastName</a></p>
     }
 </div>
 

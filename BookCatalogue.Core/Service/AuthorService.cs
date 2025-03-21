@@ -42,7 +42,7 @@ public class AuthorService(HttpClient httpClient)
     // PUT: Update an existing author
     public async Task<bool> UpdateAuthorAsync(Guid id, Author author)
     {
-        var response = await httpClient.PutAsJsonAsync($"Author", author);
+        var response = await httpClient.PutAsJsonAsync($"Author/{id}", author);
         
         return response.IsSuccessStatusCode;
     }
